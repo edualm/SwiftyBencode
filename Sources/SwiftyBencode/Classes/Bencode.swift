@@ -7,6 +7,7 @@
 //
 
 import CryptoSwift
+import Foundation
 
 public typealias Byte = UInt8
 public typealias Bytes = [Byte]
@@ -169,8 +170,8 @@ public struct Torrent: BencodeProtocol {
 
 extension Torrent: Hashable {
     
-    public var hashValue: Int {
-        return self.infoHash.hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(self.infoHash.hashValue)
     }
     
     public static func == (lhs: Torrent, rhs: Torrent) -> Bool {

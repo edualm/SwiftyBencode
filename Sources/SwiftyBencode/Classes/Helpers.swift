@@ -5,7 +5,7 @@
 //  Created by Arnaud Dorgans on 17/09/2018.
 //
 
-import UIKit
+import Foundation
 
 extension ArraySlice where Element == UInt8 {
     

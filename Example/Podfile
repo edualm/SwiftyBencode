@@ -1,6 +1,0 @@
-use_frameworks!
-target 'SwiftyBencode_Tests' do
-  pod 'SwiftyBencode', :path => '../'
-  
-  
-end
