@@ -20,6 +20,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "SwiftyBencode", dependencies: ["CryptoSwift"])
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
-
